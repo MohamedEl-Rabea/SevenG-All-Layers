@@ -1,0 +1,199 @@
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\ApplicationInsights.config
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\csc.exe
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\System.Collections.Immutable.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\System.Reflection.Metadata.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\vbc.exe
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\VBCSCompiler.exe
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\roslyn\VBCSCompiler.exe.config
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\sevenG.dll.config
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\sevenG.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\sevenG.pdb
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.DependencyCollector.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.Web.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.WindowsServer.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.ApplicationInsights.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.DependencyCollector.xml
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.Web.xml
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.AI.WindowsServer.xml
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.ApplicationInsights.xml
+E:\MY WORK\7g\7g system\sevenG\sevenG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MY WORK\7g\7g system\sevenG\sevenG\obj\Debug\sevenG.csprojResolveAssemblyReference.cache
+E:\MY WORK\7g\7g system\sevenG\sevenG\obj\Debug\sevenG.dll
+E:\MY WORK\7g\7g system\sevenG\sevenG\obj\Debug\sevenG.pdb
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\ApplicationInsights.config
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\csc.exe
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\System.Collections.Immutable.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\System.Reflection.Metadata.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\vbc.exe
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\VBCSCompiler.exe
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\roslyn\VBCSCompiler.exe.config
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\sevenG.dll.config
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\sevenG.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\sevenG.pdb
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.DependencyCollector.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.Web.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.WindowsServer.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.ApplicationInsights.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\sevenG_BL.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\sevenG_BL.pdb
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.DependencyCollector.xml
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.Web.xml
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.AI.WindowsServer.xml
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.ApplicationInsights.xml
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MY WORK\Dot Net\sevenG\sevenG\obj\Debug\sevenG.csprojResolveAssemblyReference.cache
+E:\MY WORK\Dot Net\sevenG\sevenG\obj\Debug\sevenG.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\obj\Debug\sevenG.pdb
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\sevenG_DAL.dll
+E:\MY WORK\Dot Net\sevenG\sevenG\bin\sevenG_DAL.pdb
+D:\7g\Dot Net\sevenG\sevenG\bin\ApplicationInsights.config
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\csc.exe
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\System.Collections.Immutable.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\System.Reflection.Metadata.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\vbc.exe
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\VBCSCompiler.exe
+D:\7g\Dot Net\sevenG\sevenG\bin\roslyn\VBCSCompiler.exe.config
+D:\7g\Dot Net\sevenG\sevenG\bin\sevenG.dll.config
+D:\7g\Dot Net\sevenG\sevenG\bin\sevenG.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\sevenG.pdb
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.Agent.Intercept.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.DependencyCollector.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.Web.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.WindowsServer.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ApplicationInsights.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\sevenG_BL.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\sevenG_DAL.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\sevenG_BL.pdb
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.DependencyCollector.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.Web.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.AI.WindowsServer.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ApplicationInsights.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\sevenG_DAL.pdb
+D:\7g\Dot Net\sevenG\sevenG\obj\Debug\sevenG.dll
+D:\7g\Dot Net\sevenG\sevenG\obj\Debug\sevenG.pdb
+D:\7g\Dot Net\sevenG\sevenG\bin\AjaxControlToolkit.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.WebForms.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.SqlServer.Types.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\7g\Dot Net\sevenG\sevenG\obj\Debug\sevenG.csprojResolveAssemblyReference.cache
+D:\7g\Dot Net\sevenG\sevenG\obj\Debug\RdlCompile.cache
+D:\7g\Dot Net\sevenG\sevenG\obj\Debug\RdlCompile.compiled
+D:\7g\Dot Net\sevenG\sevenG\bin\ICSharpCode.SharpZipLib.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.Web.Infrastructure.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Newtonsoft.Json.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Swashbuckle.Core.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\System.Net.Http.Formatting.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\System.Web.Http.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\System.Web.Http.WebHost.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\WebActivatorEx.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Newtonsoft.Json.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\System.Net.Http.Formatting.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\System.Web.Http.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\System.Web.Http.WebHost.xml
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.Common.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.csprojResolveAssemblyReference.cache
+D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.csproj.CoreCompileInputs.cache
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\ApplicationInsights.config
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\csc.exe
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\System.Collections.Immutable.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\System.Reflection.Metadata.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\vbc.exe
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\VBCSCompiler.exe
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\VBCSCompiler.exe.config
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\sevenG.dll.config
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\sevenG.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\sevenG.pdb
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.DependencyCollector.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.Web.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.WindowsServer.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.ApplicationInsights.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.ReportViewer.Common.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.Web.Infrastructure.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Newtonsoft.Json.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\sevenG_BL.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Swashbuckle.Core.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\System.Net.Http.Formatting.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\System.Web.Http.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\System.Web.Http.WebHost.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\WebActivatorEx.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\sevenG_DAL.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\sevenG_BL.pdb
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.DependencyCollector.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.Web.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.AI.WindowsServer.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.ApplicationInsights.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\Newtonsoft.Json.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\System.Net.Http.Formatting.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\System.Web.Http.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\System.Web.Http.WebHost.xml
+D:\Mine\Projects\SevenG\sevenG\sevenG\bin\sevenG_DAL.pdb
+D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.csproj.CopyComplete
+D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.pdb

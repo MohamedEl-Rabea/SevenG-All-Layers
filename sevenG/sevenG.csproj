@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F7F1C19-B029-43CF-AEDD-38432D795FA7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sevenG</RootNamespace>
+    <AssemblyName>sevenG</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.6783, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\.net sources\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\.net sources\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.AppService.ApiApps.Service, Version=0.9.16.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.AppService.ApiApps.Service.0.9.16\lib\net45\Microsoft.Azure.AppService.ApiApps.Service.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.WinForms.12.0.2402.15\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.0.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.4.0.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="7Gsetting\Customers.aspx" />
+    <Content Include="7Gsetting\ForgetPassword.aspx" />
+    <Content Include="7Gsetting\MyOrders.aspx" />
+    <Content Include="7Gsetting\PersonalInfo.aspx" />
+    <Content Include="7Gsetting\ProductPaper.aspx" />
+    <Content Include="7Gsetting\PurchasingPaper.aspx" />
+    <Content Include="7Gsetting\Register.aspx" />
+    <Content Include="7Gsetting\ResetPassword.aspx" />
+    <Content Include="assets\css\material-dashboard-rtl.css" />
+    <Content Include="assets\css\material-dashboard.css" />
+    <Content Include="assets\css\material-dashboard.min.css" />
+    <Content Include="assets\img\apple-icon.png" />
+    <Content Include="assets\img\cover.jpg" />
+    <Content Include="assets\img\faces\avatar.jpg" />
+    <Content Include="assets\img\faces\card-profile1-square.jpg" />
+    <Content Include="assets\img\faces\card-profile2-square.jpg" />
+    <Content Include="assets\img\faces\marc.jpg" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\mask.png" />
+    <Content Include="assets\img\new_logo.png" />
+    <Content Include="assets\img\sidebar-1.jpg" />
+    <Content Include="assets\img\sidebar-2.jpg" />
+    <Content Include="assets\img\sidebar-3.jpg" />
+    <Content Include="assets\img\sidebar-4.jpg" />
+    <Content Include="assets\js\core\bootstrap-material-design.min.js" />
+    <Content Include="assets\js\core\jquery.min.js" />
+    <Content Include="assets\js\core\popper.min.js" />
+    <Content Include="assets\js\material-dashboard.js" />
+    <Content Include="assets\js\material-dashboard.min.js" />
+    <Content Include="assets\js\plugins\arrive.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-datetimepicker.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="assets\js\plugins\chartist.min.js" />
+    <Content Include="assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="assets\js\plugins\jquery-jvectormap.js" />
+    <Content Include="assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="assets\js\plugins\jquery.dataTables.min.js" />
+    <Content Include="assets\js\plugins\jquery.tagsinput.js" />
+    <Content Include="assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="assets\js\plugins\moment.min.js" />
+    <Content Include="assets\js\plugins\nouislider.min.js" />
+    <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="assets\js\plugins\sweetalert2.js" />
+    <Content Include="css-old-style\custom.css" />
+    <Content Include="css-old-style\sb-admin.css" />
+    <Content Include="css-old-style\sb-admin.min.css" />
+    <Content Include="Dashboard\admin-dashboard.aspx" />
+    <Content Include="Dashboard\DshOrder.aspx" />
+    <Content Include="Dashboard\DshQuotation.aspx" />
+    <Content Include="Setting\Definitions-navigation-panel.aspx" />
+    <Content Include="Design\Design-navigation-panel.aspx" />
+    <Content Include="Design\LoadAtt.aspx" />
+    <Content Include="Design\ProcessDesign.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="js-old-style\sb-admin-charts.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="map.html" />
+    <Content Include="Operation\finishOperation.aspx" />
+    <Content Include="Operation\Operate.aspx" />
+    <Content Include="Operation\Operation-navigation-panel.aspx" />
+    <Content Include="Order\Cart.aspx" />
+    <Content Include="Order\CheckQuot.aspx" />
+    <Content Include="Order\CustomOrder.aspx" />
+    <Content Include="Order\Order.aspx" />
+    <Content Include="Order\Orders-navigation-panel.aspx" />
+    <Content Include="Order\PrintInvoice.aspx" />
+    <Content Include="Order\PrintJobOrder.aspx" />
+    <Content Include="Order\PrintQuot.aspx" />
+    <Content Include="Order\WholesaleOrder.aspx" />
+    <Content Include="Products\BooksLandScape.aspx" />
+    <Content Include="Products\BooksPortrait.aspx" />
+    <Content Include="Products\BusinessCards.aspx" />
+    <Content Include="Products\Flyers.aspx" />
+    <Content Include="Products\Folders.aspx" />
+    <Content Include="Products\product-navigation-panel.aspx" />
+    <Content Include="sb-admin-charts.min.js" />
+    <Content Include="js-old-style\sb-admin-datatables.js" />
+    <Content Include="js-old-style\sb-admin-datatables.min.js" />
+    <Content Include="js-old-style\sb-admin.js" />
+    <Content Include="js-old-style\sb-admin.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include=".gitignore" />
+    <Content Include=".jsbeautifyrc" />
+    <Content Include=".travis.yml" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="MasterPages\SEVENG.Master" />
+    <Content Include="Services\NotificationService.asmx" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css.map" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="vendor\font-awesome\less\animated.less" />
+    <Content Include="vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="vendor\font-awesome\less\core.less" />
+    <Content Include="vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="vendor\font-awesome\less\icons.less" />
+    <Content Include="vendor\font-awesome\less\larger.less" />
+    <Content Include="vendor\font-awesome\less\list.less" />
+    <Content Include="vendor\font-awesome\less\mixins.less" />
+    <Content Include="vendor\font-awesome\less\path.less" />
+    <Content Include="vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="vendor\font-awesome\less\stacked.less" />
+    <Content Include="vendor\font-awesome\less\variables.less" />
+    <Content Include="vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="vendor\font-awesome\scss\_core.scss" />
+    <Content Include="vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="vendor\font-awesome\scss\_list.scss" />
+    <Content Include="vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="vendor\font-awesome\scss\_path.scss" />
+    <Content Include="vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="vendor\jquery\jquery.min.map" />
+    <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <Content Include="App_Code\SevenG.xsc">
+      <DependentUpon>SevenG.xsd</DependentUpon>
+    </Content>
+    <Content Include="apiapp.json" />
+    <None Include="App_Code\SevenG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SevenG.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="App_Code\SevenG.xss">
+      <DependentUpon>SevenG.xsd</DependentUpon>
+    </Content>
+    <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
+    <Content Include="MasterPages\OldStyleMaster.Master" />
+    <Content Include="assets\.DS_Store" />
+    <Content Include="assets\css\.DS_Store" />
+    <Content Include="assets\css\material-dashboard.css.map" />
+    <Content Include="assets\js\.DS_Store" />
+    <Content Include="assets\js\material-dashboard.js.map" />
+    <Content Include="assets\scss\material-dashboard.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\bootstrap.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_float.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_navbar-align.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_align.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_background.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_display.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_float.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_position.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_text.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_alert.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_badge.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_button-group.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_buttons.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_card.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_carousel.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_close.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_code.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_dropdown.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_forms.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_functions.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_grid.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_images.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_input-group.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_list-group.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_media.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_mixins.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_modal.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_nav.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_navbar.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_pagination.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_popover.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_print.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_progress.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_reboot.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_root.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_tables.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_tooltip.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_transitions.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_type.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_utilities.scss" />
+    <Content Include="assets\scss\material-dashboard\bootstrap\scss\_variables.scss" />
+    <Content Include="assets\scss\material-dashboard\cards\_card-plain.scss" />
+    <Content Include="assets\scss\material-dashboard\cards\_card-profile.scss" />
+    <Content Include="assets\scss\material-dashboard\cards\_card-stats.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_alert.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_animations.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_breakpoints.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_buttons.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_chartist.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_colored-shadows.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_drawer.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_forms.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_hover.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_layout.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_navbar-colors.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_navs.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_sidebar-color.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_transparency.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_type.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_utilities.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_variables.scss" />
+    <Content Include="assets\scss\material-dashboard\mixins\_vendor-prefixes.scss" />
+    <Content Include="assets\scss\material-dashboard\plugins\_animate.scss" />
+    <Content Include="assets\scss\material-dashboard\plugins\_chartist.scss" />
+    <Content Include="assets\scss\material-dashboard\plugins\_perfect-scrollbar.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_body.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_bootstrap-material-design-base.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_bootstrap-material-design.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_brand.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_buttons.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_card.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_code.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_colors-map.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_colors.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_custom-forms.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_drawer.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_dropdown.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_forms.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_layout.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_list-group.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_menu.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_modals.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_nav.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_pagination.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_shadow.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_snackbar.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_spacing.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_state.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_tables.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_tooltip.scss" />
+    <Content Include="assets\scss\material-dashboard\variables\_type.scss" />
+    <Content Include="assets\scss\material-dashboard\_alerts.scss" />
+    <Content Include="assets\scss\material-dashboard\_buttons.scss" />
+    <Content Include="assets\scss\material-dashboard\_cards.scss" />
+    <Content Include="assets\scss\material-dashboard\_checkboxes.scss" />
+    <Content Include="assets\scss\material-dashboard\_core-bootstrap.scss" />
+    <Content Include="assets\scss\material-dashboard\_dropdown.scss" />
+    <Content Include="assets\scss\material-dashboard\_example-pages.scss" />
+    <Content Include="assets\scss\material-dashboard\_fixed-plugin.scss" />
+    <Content Include="assets\scss\material-dashboard\_footers.scss" />
+    <Content Include="assets\scss\material-dashboard\_forms.scss" />
+    <Content Include="assets\scss\material-dashboard\_headers.scss" />
+    <Content Include="assets\scss\material-dashboard\_images.scss" />
+    <Content Include="assets\scss\material-dashboard\_info-areas.scss" />
+    <Content Include="assets\scss\material-dashboard\_input-group.scss" />
+    <Content Include="assets\scss\material-dashboard\_misc.scss" />
+    <Content Include="assets\scss\material-dashboard\_mixins.scss" />
+    <Content Include="assets\scss\material-dashboard\_navbar.scss" />
+    <Content Include="assets\scss\material-dashboard\_popover.scss" />
+    <Content Include="assets\scss\material-dashboard\_popups.scss" />
+    <Content Include="assets\scss\material-dashboard\_radios.scss" />
+    <Content Include="assets\scss\material-dashboard\_responsive.scss" />
+    <Content Include="assets\scss\material-dashboard\_ripples.scss" />
+    <Content Include="assets\scss\material-dashboard\_sidebar-and-main-panel.scss" />
+    <Content Include="assets\scss\material-dashboard\_social-buttons.scss" />
+    <Content Include="assets\scss\material-dashboard\_tables.scss" />
+    <Content Include="assets\scss\material-dashboard\_tabs.scss" />
+    <Content Include="assets\scss\material-dashboard\_togglebutton.scss" />
+    <Content Include="assets\scss\material-dashboard\_tooltip.scss" />
+    <Content Include="assets\scss\material-dashboard\_type.scss" />
+    <Content Include="assets\scss\material-dashboard\_variables.scss" />
+    <None Include="Properties\PublishProfiles\7GSystem.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="forgot-password.html" />
+    <Content Include="gulpfile.js" />
+    <Content Include="7Gsetting\papers.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.js" />
+    <Content Include="vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="vendor\chart.js\Chart.js" />
+    <Content Include="vendor\chart.js\Chart.min.js" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.css" />
+    <Content Include="vendor\datatables\dataTables.bootstrap4.js" />
+    <Content Include="vendor\datatables\jquery.dataTables.js" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\jquery\jquery.slim.js" />
+    <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="views\HomePage.aspx" />
+    <Content Include="views\MapFullAddress.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="7Gsetting\Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7Gsetting\MyOrders.aspx.cs">
+      <DependentUpon>MyOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\MyOrders.aspx.designer.cs">
+      <DependentUpon>MyOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7Gsetting\ProductPaper.aspx.cs">
+      <DependentUpon>ProductPaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\ProductPaper.aspx.designer.cs">
+      <DependentUpon>ProductPaper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7Gsetting\PurchasingPaper.aspx.cs">
+      <DependentUpon>PurchasingPaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\PurchasingPaper.aspx.designer.cs">
+      <DependentUpon>PurchasingPaper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\admin-dashboard.aspx.cs">
+      <DependentUpon>admin-dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\admin-dashboard.aspx.designer.cs">
+      <DependentUpon>admin-dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DshOrder.aspx.cs">
+      <DependentUpon>DshOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DshOrder.aspx.designer.cs">
+      <DependentUpon>DshOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DshQuotation.aspx.cs">
+      <DependentUpon>DshQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DshQuotation.aspx.designer.cs">
+      <DependentUpon>DshQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\Definitions-navigation-panel.aspx.cs">
+      <DependentUpon>Definitions-navigation-panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setting\Definitions-navigation-panel.aspx.designer.cs">
+      <DependentUpon>Definitions-navigation-panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Design\Design-navigation-panel.aspx.cs">
+      <DependentUpon>Design-navigation-panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Design\Design-navigation-panel.aspx.designer.cs">
+      <DependentUpon>Design-navigation-panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Design\LoadAtt.aspx.cs">
+      <DependentUpon>LoadAtt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Design\LoadAtt.aspx.designer.cs">
+      <DependentUpon>LoadAtt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Design\ProcessDesign.aspx.cs">
+      <DependentUpon>ProcessDesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Design\ProcessDesign.aspx.designer.cs">
+      <DependentUpon>ProcessDesign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\OldStyleMaster.Master.cs">
+      <DependentUpon>OldStyleMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\OldStyleMaster.Master.designer.cs">
+      <DependentUpon>OldStyleMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\Operation-navigation-panel.aspx.cs">
+      <DependentUpon>Operation-navigation-panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\Operation-navigation-panel.aspx.designer.cs">
+      <DependentUpon>Operation-navigation-panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\CustomOrder.aspx.cs">
+      <DependentUpon>CustomOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\CustomOrder.aspx.designer.cs">
+      <DependentUpon>CustomOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Orders-navigation-panel.aspx.cs">
+      <DependentUpon>Orders-navigation-panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Orders-navigation-panel.aspx.designer.cs">
+      <DependentUpon>Orders-navigation-panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\PrintJobOrder.aspx.cs">
+      <DependentUpon>PrintJobOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\PrintJobOrder.aspx.designer.cs">
+      <DependentUpon>PrintJobOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\WholesaleOrder.aspx.cs">
+      <DependentUpon>WholesaleOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\WholesaleOrder.aspx.designer.cs">
+      <DependentUpon>WholesaleOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Folders.aspx.cs">
+      <DependentUpon>Folders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Folders.aspx.designer.cs">
+      <DependentUpon>Folders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\product-navigation-panel.aspx.cs">
+      <DependentUpon>product-navigation-panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\product-navigation-panel.aspx.designer.cs">
+      <DependentUpon>product-navigation-panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\NotificationService.asmx.cs">
+      <DependentUpon>NotificationService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\MapFullAddress.aspx.cs">
+      <DependentUpon>MapFullAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\MapFullAddress.aspx.designer.cs">
+      <DependentUpon>MapFullAddress.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\SevenG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SevenG.xsd</DependentUpon>
+    </Content>
+    <Compile Include="7Gsetting\ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7Gsetting\PersonalInfo.aspx.cs">
+      <DependentUpon>PersonalInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\PersonalInfo.aspx.designer.cs">
+      <DependentUpon>PersonalInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7Gsetting\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7Gsetting\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\SEVENG.Master.cs">
+      <DependentUpon>SEVENG.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\SEVENG.Master.designer.cs">
+      <DependentUpon>SEVENG.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\finishOperation.aspx.cs">
+      <DependentUpon>finishOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\finishOperation.aspx.designer.cs">
+      <DependentUpon>finishOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\Operate.aspx.cs">
+      <DependentUpon>Operate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operation\Operate.aspx.designer.cs">
+      <DependentUpon>Operate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\CheckQuot.aspx.cs">
+      <DependentUpon>CheckQuot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\CheckQuot.aspx.designer.cs">
+      <DependentUpon>CheckQuot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\PrintInvoice.aspx.cs">
+      <DependentUpon>PrintInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\PrintInvoice.aspx.designer.cs">
+      <DependentUpon>PrintInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\PrintQuot.aspx.cs">
+      <DependentUpon>PrintQuot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\PrintQuot.aspx.designer.cs">
+      <DependentUpon>PrintQuot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\BooksLandScape.aspx.cs">
+      <DependentUpon>BooksLandScape.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\BooksLandScape.aspx.designer.cs">
+      <DependentUpon>BooksLandScape.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\BooksPortrait.aspx.cs">
+      <DependentUpon>BooksPortrait.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\BooksPortrait.aspx.designer.cs">
+      <DependentUpon>BooksPortrait.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\BusinessCards.aspx.cs">
+      <DependentUpon>BusinessCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\BusinessCards.aspx.designer.cs">
+      <DependentUpon>BusinessCards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="7Gsetting\papers.aspx.cs">
+      <DependentUpon>papers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="7Gsetting\papers.aspx.designer.cs">
+      <DependentUpon>papers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Flyers.aspx.cs">
+      <DependentUpon>Flyers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Flyers.aspx.designer.cs">
+      <DependentUpon>Flyers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="views\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Order\Invoices\" />
+    <Folder Include="Order\QuotationReports\" />
+    <Folder Include="Order\QuotationsAttachment\" />
+    <Folder Include="ProductsAttachment\" />
+    <Folder Include="pug\" />
+    <Folder Include="scss\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sevenG_BL\sevenG_BL.csproj">
+      <Project>{f3bf2035-c9da-47c4-a243-c9a30136acfb}</Project>
+      <Name>sevenG_BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Order\JobOrder.rdlc" />
+    <EmbeddedResource Include="Order\Invoice.rdlc" />
+    <EmbeddedResource Include="Order\Quotation.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58920</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58920/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

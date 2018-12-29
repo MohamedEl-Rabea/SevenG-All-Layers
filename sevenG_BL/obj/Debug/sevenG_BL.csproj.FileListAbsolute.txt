@@ -1,0 +1,23 @@
+E:\MY WORK\Dot Net\sevenG\sevenG_BL\bin\Debug\sevenG_BL.dll
+E:\MY WORK\Dot Net\sevenG\sevenG_BL\bin\Debug\sevenG_BL.pdb
+E:\MY WORK\Dot Net\sevenG\sevenG_BL\bin\Debug\sevenG_DAL.dll
+E:\MY WORK\Dot Net\sevenG\sevenG_BL\bin\Debug\sevenG_DAL.pdb
+E:\MY WORK\Dot Net\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csprojResolveAssemblyReference.cache
+E:\MY WORK\Dot Net\sevenG\sevenG_BL\obj\Debug\sevenG_BL.dll
+E:\MY WORK\Dot Net\sevenG\sevenG_BL\obj\Debug\sevenG_BL.pdb
+D:\7g\Dot Net\sevenG\sevenG_BL\bin\Debug\sevenG_BL.dll
+D:\7g\Dot Net\sevenG\sevenG_BL\bin\Debug\sevenG_BL.pdb
+D:\7g\Dot Net\sevenG\sevenG_BL\bin\Debug\sevenG_DAL.dll
+D:\7g\Dot Net\sevenG\sevenG_BL\bin\Debug\sevenG_DAL.pdb
+D:\7g\Dot Net\sevenG\sevenG_BL\obj\Debug\sevenG_BL.dll
+D:\7g\Dot Net\sevenG\sevenG_BL\obj\Debug\sevenG_BL.pdb
+D:\7g\Dot Net\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csprojResolveAssemblyReference.cache
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\bin\Debug\sevenG_BL.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\bin\Debug\sevenG_BL.pdb
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\bin\Debug\sevenG_DAL.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\bin\Debug\sevenG_DAL.pdb
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csprojResolveAssemblyReference.cache
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csproj.CoreCompileInputs.cache
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csproj.CopyComplete
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.dll
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.pdb
