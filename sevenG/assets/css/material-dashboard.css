@@ -15,6 +15,30 @@
 
 /*     brand Colors              */
 
+#accordionExample img {
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+    #accordionExample img:hover {
+        opacity: .6;
+    }
+
+#accordionExample .card2 {
+    border: 1px solid #fff;
+}
+
+    #accordionExample .card2:hover {
+        cursor: pointer;
+        border-color: #9c27b0
+    }
+
+.selected {
+    border-color: #9c27b0
+}
+
+
 .card {
   font-size: .875rem;
 }

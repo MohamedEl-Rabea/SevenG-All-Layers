@@ -172,18 +172,36 @@
     <Content Include="assets\css\material-dashboard.css" />
     <Content Include="assets\css\material-dashboard.min.css" />
     <Content Include="assets\img\apple-icon.png" />
+    <Content Include="assets\img\coated-glossy-paper-500x500.jpg" />
+    <Content Include="assets\img\colord_paper_card.jpg" />
     <Content Include="assets\img\cover.jpg" />
+    <Content Include="assets\img\digital_printing_Card.jpg" />
     <Content Include="assets\img\faces\avatar.jpg" />
     <Content Include="assets\img\faces\card-profile1-square.jpg" />
     <Content Include="assets\img\faces\card-profile2-square.jpg" />
     <Content Include="assets\img\faces\marc.jpg" />
     <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\lamination.jpg" />
+    <Content Include="assets\img\lamination2.jpg" />
+    <Content Include="assets\img\lamination3.jpg" />
+    <Content Include="assets\img\lamination4.jpg" />
     <Content Include="assets\img\mask.png" />
+    <Content Include="assets\img\Metallic-Business-card.png" />
     <Content Include="assets\img\new_logo.png" />
+    <Content Include="assets\img\rounded_corners.png" />
     <Content Include="assets\img\sidebar-1.jpg" />
     <Content Include="assets\img\sidebar-2.jpg" />
     <Content Include="assets\img\sidebar-3.jpg" />
     <Content Include="assets\img\sidebar-4.jpg" />
+    <Content Include="assets\img\smaple.jpg" />
+    <Content Include="assets\img\soptuvraised-cards-2.jpg" />
+    <Content Include="assets\img\special effectjpg.jpg" />
+    <Content Include="assets\img\spec_blank_l.png" />
+    <Content Include="assets\img\spec_oneside.png" />
+    <Content Include="assets\img\spec_twoside.png" />
+    <Content Include="assets\img\spot_uv.jpg" />
+    <Content Include="assets\img\synthetic.jpg" />
+    <Content Include="assets\img\textured_Card.jpg" />
     <Content Include="assets\js\core\bootstrap-material-design.min.js" />
     <Content Include="assets\js\core\jquery.min.js" />
     <Content Include="assets\js\core\popper.min.js" />
@@ -212,6 +230,7 @@
     <Content Include="Dashboard\admin-dashboard.aspx" />
     <Content Include="Dashboard\DshOrder.aspx" />
     <Content Include="Dashboard\DshQuotation.aspx" />
+    <Content Include="Products\business-cards-category.aspx" />
     <Content Include="Setting\Definitions-navigation-panel.aspx" />
     <Content Include="Design\Design-navigation-panel.aspx" />
     <Content Include="Design\LoadAtt.aspx" />
@@ -576,6 +595,13 @@
     </Compile>
     <Compile Include="Dashboard\DshQuotation.aspx.designer.cs">
       <DependentUpon>DshQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\business-cards-category.aspx.cs">
+      <DependentUpon>business-cards-category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\business-cards-category.aspx.designer.cs">
+      <DependentUpon>business-cards-category.aspx</DependentUpon>
     </Compile>
     <Compile Include="Setting\Definitions-navigation-panel.aspx.cs">
       <DependentUpon>Definitions-navigation-panel.aspx</DependentUpon>

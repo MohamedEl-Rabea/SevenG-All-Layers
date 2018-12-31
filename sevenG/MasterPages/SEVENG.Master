@@ -215,7 +215,7 @@
 
                 //Load notifications
                 $.ajax({
-                    url: '../Services/NotificationService.asmx/GetNotifications',
+                    url: '../Services/NotificationService.asmx/getStockNotification',
                     type: "POST",
                     dataType: "json",
                     contentType: "application/json; charset=utf-8",
@@ -234,6 +234,12 @@
                     error: function (err) {
                         //alert(err.statusText);
                     }
+                });
+
+                 //Update field based on photo selection
+                $('.card2').click(function () {
+                    $(this).addClass('selected');
+                    $("input[name='" + $(this).attr('data-field') + "']").val($(this).attr('data-value')).focus();
                 });
 
                 $sidebar = $('.sidebar');

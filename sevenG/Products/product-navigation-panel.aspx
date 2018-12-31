@@ -14,7 +14,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="stats">
-                        <input type="button" value="Enter" class="btn btn-success btn-sm" />
+                        <a href="business-cards-category.aspx" class="btn btn-success btn-sm">Enter</a>
                     </div>
                 </div>
             </div>
