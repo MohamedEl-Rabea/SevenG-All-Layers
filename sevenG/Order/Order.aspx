@@ -27,7 +27,8 @@
                 <div class="form-row">
                     <div class="col-md-6">
                         <label for="ProName">Customer Name</label>
-                        <asp:DropDownList ID="DRLCustName" runat="server" class="form-control" placeholder="اسم العميل" DataTextField="CUSTOMER_NAME" DataValueField="CUSTOMER_ID" AutoPostBack="True" OnSelectedIndexChanged="DRLCustName_SelectedIndexChanged"></asp:DropDownList>
+                        <asp:DropDownList ID="DRLCustName" runat="server" class="form-control" placeholder="اسم العميل" 
+                            DataTextField="CUSTOMER_NAME" DataValueField="CUSTOMER_ID" AutoPostBack="True" OnSelectedIndexChanged="DRLCustName_SelectedIndexChanged"></asp:DropDownList>
                         <asp:LinkButton ID="BtnAddCust" runat="server" OnClick="BtnAddCust_Click">Add customer</asp:LinkButton>
                     </div>
                    

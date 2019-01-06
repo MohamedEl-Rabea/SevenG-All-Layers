@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/SEVENG.Master" AutoEventWireup="true" CodeBehind="product-navigation-panel.aspx.cs" Inherits="sevenG.Products.product_navigation_panel" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -30,7 +31,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="stats">
-                        <input type="button" value="Enter" class="btn btn-success btn-sm" />
+                        <a href="flyers-category.aspx" class="btn btn-success btn-sm">Enter</a>
                     </div>
                 </div>
             </div>
@@ -46,7 +47,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="stats">
-                        <input type="button" value="Enter" class="btn btn-success btn-sm" />
+                        <a href="folders-category.aspx" class="btn btn-success btn-sm">Enter</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +63,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="stats">
-                        <input type="button" value="Enter" class="btn btn-success btn-sm" />
+                        <a href="books-booklets-category.aspx" class="btn btn-success btn-sm">Enter</a>
                     </div>
                 </div>
             </div>

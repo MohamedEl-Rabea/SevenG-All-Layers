@@ -22,7 +22,6 @@
           <i class="fa fa-table"></i> Orders</div>
         <div class="card-body">
           <div class="table-responsive">
-              
               <asp:GridView ID="GrdOrders" runat="server" Width="100%"
                   DataKeyNames="PROD_NAME,ORDER_ID" CssClass="table table-bordered" AllowSorting="true" OnSelectedIndexChanged="GrdOrders_SelectedIndexChanged" OnRowDataBound="GrdOrders_RowDataBound" OnPageIndexChanging="GrdOrders_PageIndexChanging" AllowPaging="true" AutoGenerateColumns="False">
                   <Columns>

@@ -16,8 +16,8 @@ D:\Mine\Projects\SevenG\sevenG\sevenG_BL\bin\Debug\sevenG_BL.dll
 D:\Mine\Projects\SevenG\sevenG\sevenG_BL\bin\Debug\sevenG_BL.pdb
 D:\Mine\Projects\SevenG\sevenG\sevenG_BL\bin\Debug\sevenG_DAL.dll
 D:\Mine\Projects\SevenG\sevenG\sevenG_BL\bin\Debug\sevenG_DAL.pdb
-D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csprojResolveAssemblyReference.cache
 D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csproj.CoreCompileInputs.cache
 D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csproj.CopyComplete
 D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.dll
 D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.pdb
+D:\Mine\Projects\SevenG\sevenG\sevenG_BL\obj\Debug\sevenG_BL.csprojAssemblyReference.cache

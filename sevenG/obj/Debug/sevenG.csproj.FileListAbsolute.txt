@@ -139,7 +139,6 @@ D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.Common.dll
 D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.DataVisualization.dll
 D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
 D:\7g\Dot Net\sevenG\sevenG\bin\Microsoft.ReportViewer.WinForms.dll
-D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.csprojResolveAssemblyReference.cache
 D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.csproj.CoreCompileInputs.cache
 D:\Mine\Projects\SevenG\sevenG\sevenG\bin\ApplicationInsights.config
 D:\Mine\Projects\SevenG\sevenG\sevenG\bin\roslyn\csc.exe
@@ -197,3 +196,4 @@ D:\Mine\Projects\SevenG\sevenG\sevenG\bin\sevenG_DAL.pdb
 D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.csproj.CopyComplete
 D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.dll
 D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.pdb
+D:\Mine\Projects\SevenG\sevenG\sevenG\obj\Debug\sevenG.csprojAssemblyReference.cache

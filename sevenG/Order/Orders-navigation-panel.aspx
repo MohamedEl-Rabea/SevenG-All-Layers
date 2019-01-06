@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/SEVENG.Master" AutoEventWireup="true" CodeBehind="Orders-navigation-panel.aspx.cs" Inherits="sevenG.Order.Orders_navigation_panel" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -10,11 +11,11 @@
                         <i class="material-icons">add_shopping_cart</i>
                     </div>
                     <p class="card-category">Sales section #1</p>
-                    <h4 class="card-title"><strong>Orders</strong></h4>
+                    <h4 class="card-title"><strong>New order</strong></h4>
                 </div>
                 <div class="card-footer">
                     <div class="stats">
-                        <input type="button" value="Enter" class="btn btn-success btn-sm" />
+                        <a href="new-order.aspx" class="btn btn-success btn-sm">Enter</a>
                     </div>
                 </div>
             </div>
@@ -26,11 +27,11 @@
                         <i class="material-icons">book</i>
                     </div>
                     <p class="card-category">Sales section #1</p>
-                    <h4 class="card-title"><strong>Quotations</strong></h4>
+                    <h4 class="card-title"><strong>New quotation</strong></h4>
                 </div>
                 <div class="card-footer">
                     <div class="stats">
-                        <input type="button" value="Enter" class="btn btn-success btn-sm" />
+                        <a href="new-order.aspx" class="btn btn-success btn-sm">Enter</a>
                     </div>
                 </div>
             </div>

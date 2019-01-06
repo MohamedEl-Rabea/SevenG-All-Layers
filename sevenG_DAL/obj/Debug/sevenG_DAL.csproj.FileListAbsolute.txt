@@ -9,7 +9,7 @@ D:\7g\Dot Net\sevenG\sevenG_DAL\obj\Debug\sevenG_DAL.dll
 D:\7g\Dot Net\sevenG\sevenG_DAL\obj\Debug\sevenG_DAL.pdb
 D:\Mine\Projects\SevenG\sevenG\sevenG_DAL\bin\Debug\sevenG_DAL.dll
 D:\Mine\Projects\SevenG\sevenG\sevenG_DAL\bin\Debug\sevenG_DAL.pdb
-D:\Mine\Projects\SevenG\sevenG\sevenG_DAL\obj\Debug\sevenG_DAL.csprojResolveAssemblyReference.cache
 D:\Mine\Projects\SevenG\sevenG\sevenG_DAL\obj\Debug\sevenG_DAL.csproj.CoreCompileInputs.cache
 D:\Mine\Projects\SevenG\sevenG\sevenG_DAL\obj\Debug\sevenG_DAL.dll
 D:\Mine\Projects\SevenG\sevenG\sevenG_DAL\obj\Debug\sevenG_DAL.pdb
+D:\Mine\Projects\SevenG\sevenG\sevenG_DAL\obj\Debug\sevenG_DAL.csprojAssemblyReference.cache
