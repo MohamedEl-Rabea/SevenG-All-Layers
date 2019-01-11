@@ -10,29 +10,29 @@ namespace sevenG.Products
         float count = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                if (Session["MainOrderID"] != null)
-                {
-                    loadProducts();
-                    loadLaminations();
-                    loadPrinters();
-                    DRLProName_SelectedIndexChanged(sender, e);
-                    DRLSize_SelectedIndexChanged(sender, e);
-                    Session["roundPrice"] = count;
-                }
-                else
-                {
-                    Response.Redirect("../Order/Order.aspx");
-                }
-            }
+            //if (!IsPostBack)
+            //{
+            //    if (Session["MainOrderID"] != null)
+            //    {
+            //        loadProducts();
+            //        loadLaminations();
+            //        loadPrinters();
+            //        DRLProName_SelectedIndexChanged(sender, e);
+            //        DRLSize_SelectedIndexChanged(sender, e);
+            //        Session["roundPrice"] = count;
+            //    }
+            //    else
+            //    {
+            //        Response.Redirect("../Order/new-order.aspx");
+            //    }
+            //}
         }
 
 
 
         private void loadPrice()
         {
-            //clearControl();
+            clearControl();
             //int categoryId = 202;
             //DataSet ds1 = PricesBL.getCategoryProfit((Convert.ToString(Application["strDBConn"])), categoryId);
             //float profit = float.Parse(ds1.Tables[0].Rows[0]["PROFIT"].ToString());
@@ -135,51 +135,65 @@ namespace sevenG.Products
 
         protected void save_Click(object sender, EventArgs e)
         {
-            string today = DateTime.Now.ToString("d/M/yyyy");
-
-            //string roundItems = String.Join(",",
-            // checkRoundCorn.Items.OfType<ListItem>().Where(r => r.Selected)
-            //.Select(r => r.Text));
-
-            string roundItems = "Corners : ";
-            foreach (ListItem item in checkRoundCorn.Items)
-            {
-                if (item.Selected)
-                {
-                    roundItems += item.Text + "  ";
-                }
-            }
-
-            Session["sizeCost"] = 1;
-            double quntity = double.Parse(TXTQuantity.Text);
-            double print = double.Parse(Session["materialPrice"].ToString()) + (double.Parse(Session["sideCost"].ToString()) * double.Parse(Session["sizeCost"].ToString()) * double.Parse(Session["print"].ToString()));
-            double PrintCost = print * quntity / double.Parse(Session["size"].ToString());
-            double laminationCost = double.Parse(Session["laminationPrice"].ToString()) * quntity;
-            double SpotCost = double.Parse(Session["spotCost"].ToString()) * quntity / double.Parse(Session["size"].ToString());
-            double roundCorner = double.Parse(Session["roundPrice"].ToString()) * quntity;
-            Session["cost"] = PrintCost + laminationCost + SpotCost + roundCorner;
-
-            DataSet ds = OperationBL.insertOrder((Convert.ToString(Application["strDBConn"])), int.Parse(DRLProName.SelectedValue.ToString()),
-             int.Parse(DRLMaterials.SelectedValue.ToString()), int.Parse(DRLSize.SelectedValue.ToString()), int.Parse(Session["laminationID"].ToString()), DrpSecialEffect.Text.ToString(),
-             int.Parse(DRLSides.SelectedValue.ToString()), int.Parse(DrpPrint.SelectedValue.ToString()), roundItems, int.Parse(TXTQuantity.Text.ToString()),
-             float.Parse(Session["cost"].ToString()), float.Parse(TxtPrice.Text.ToString()), int.Parse(Session["MainOrderID"].ToString()), int.Parse(Session["CustomerID"].ToString()));
-
-
-            if (ds.Tables[0].Rows[0]["ret"].ToString() == "-1")
+            if (string.IsNullOrEmpty(TXTQuantity.Text))
             {
                 divErrMsg.Visible = true;
-                LBLError.Text = "This product is Added Before";
+                LBLError.Text = "Amount field must be filled";
+            }
+            else if (string.IsNullOrEmpty(TxtPrice.Text))
+            {
+                divErrMsg.Visible = true;
+                LBLError.Text = "Price field must be filled";
             }
             else
             {
-                LBLError.Text = "The product is added to cart...";
-                Session["attOrderId"] = ds.Tables[0].Rows[0]["ret"].ToString();
-                Session["MOrderID"] = Session["MainOrderID"].ToString();
-                Session["CustomerNo"] = Session["CustomerID"].ToString();
-                DataSet ds1 = OperationBL.insertCost((Convert.ToString(Application["strDBConn"])), int.Parse(Session["attOrderId"].ToString()), PrintCost, laminationCost, SpotCost, 0, 0, 0, roundCorner, 0, 0, double.Parse(Session["cost"].ToString()));
+                divErrMsg.Visible = false;
+                string today = DateTime.Now.ToString("d/M/yyyy");
 
-                Response.Redirect("../Design/LoadAtt.aspx");
+                //string roundItems = String.Join(",",
+                // checkRoundCorn.Items.OfType<ListItem>().Where(r => r.Selected)
+                //.Select(r => r.Text));
 
+                string roundItems = "Corners : ";
+                foreach (ListItem item in checkRoundCorn.Items)
+                {
+                    if (item.Selected)
+                    {
+                        roundItems += item.Text + "  ";
+                    }
+                }
+
+                Session["sizeCost"] = 1;
+                double quntity = double.Parse(TXTQuantity.Text);
+                double print = double.Parse(Session["materialPrice"].ToString()) + (double.Parse(Session["sideCost"].ToString()) * double.Parse(Session["sizeCost"].ToString()) * double.Parse(Session["print"].ToString()));
+                double PrintCost = print * quntity / double.Parse(Session["size"].ToString());
+                double laminationCost = double.Parse(Session["laminationPrice"].ToString()) * quntity;
+                double SpotCost = double.Parse(Session["spotCost"].ToString()) * quntity / double.Parse(Session["size"].ToString());
+                double roundCorner = double.Parse(Session["roundPrice"].ToString()) * quntity;
+                Session["cost"] = PrintCost + laminationCost + SpotCost + roundCorner;
+
+                DataSet ds = OperationBL.insertOrder((Convert.ToString(Application["strDBConn"])), int.Parse(DRLProName.SelectedValue.ToString()),
+                 int.Parse(DRLMaterials.SelectedValue.ToString()), int.Parse(DRLSize.SelectedValue.ToString()), int.Parse(Session["laminationID"].ToString()), DrpSecialEffect.Text.ToString(),
+                 int.Parse(DRLSides.SelectedValue.ToString()), int.Parse(DrpPrint.SelectedValue.ToString()), roundItems, int.Parse(TXTQuantity.Text.ToString()),
+                 float.Parse(Session["cost"].ToString()), float.Parse(TxtPrice.Text.ToString()), int.Parse(Session["MainOrderID"].ToString()), int.Parse(Session["CustomerID"].ToString()));
+
+
+                if (ds.Tables[0].Rows[0]["ret"].ToString() == "-1")
+                {
+                    divErrMsg.Visible = true;
+                    LBLError.Text = "This product is Added Before";
+                }
+                else
+                {
+                    LBLError.Text = "The product is added to cart...";
+                    Session["attOrderId"] = ds.Tables[0].Rows[0]["ret"].ToString();
+                    Session["MOrderID"] = Session["MainOrderID"].ToString();
+                    Session["CustomerNo"] = Session["CustomerID"].ToString();
+                    DataSet ds1 = OperationBL.insertCost((Convert.ToString(Application["strDBConn"])), int.Parse(Session["attOrderId"].ToString()), PrintCost, laminationCost, SpotCost, 0, 0, 0, roundCorner, 0, 0, double.Parse(Session["cost"].ToString()));
+
+                    Response.Redirect("../Design/load-attachments.aspx");
+
+                }
             }
         }
 
@@ -439,8 +453,6 @@ namespace sevenG.Products
             {
                 Session["spotCost"] = 0.75;
             }
-
-
             DRLLamination_SelectedIndexChanged(sender, e);
         }
     }

@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Web;
 using System.Web.Services;
 
@@ -22,11 +21,26 @@ namespace sevenG.Services
         [WebMethod]
         public List<string> getStockNotification()
         {
-            List<string> result = new List<string>(); 
+            List<string> result = new List<string>();
             DataSet ds = OperationBL.getStockNotification((Convert.ToString(Application["strDBConn"])));
             foreach (DataRow row in ds.Tables[0].Rows)
             {
                 result.Add(row.ItemArray[0].ToString());
+            }
+            return result;
+        }
+
+        [WebMethod(EnableSession = true)]
+        public List<string> getCartNotification()
+        {
+            List<string> result = new List<string>();
+            if (HttpContext.Current.Session["CustomerID"] != null)
+            {
+                DataSet ds = OperationBL.getStockNotification((Convert.ToString(Application["strDBConn"])));
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    result.Add(row.ItemArray[0].ToString());
+                }
             }
             return result;
         }

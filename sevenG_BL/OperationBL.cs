@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using sevenG_DAL;
+using System;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using sevenG_DAL;
 
 namespace sevenG_BL
 {
@@ -37,11 +33,11 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet loadFolderPrice(string strConnStr, int spot,int paperId)
+        public static DataSet loadFolderPrice(string strConnStr, int spot, int paperId)
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.loadFolderPrice(strConnStr, "loadFolderPrice" ,spot , paperId);
+                DataSet dsUserLogin = OperationDAL.loadFolderPrice(strConnStr, "loadFolderPrice", spot, paperId);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -50,7 +46,7 @@ namespace sevenG_BL
             }
         }
 
-      
+
 
         public static DataSet getCatPapers(string strConnStr, int catId)
         {
@@ -121,7 +117,7 @@ namespace sevenG_BL
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.insertCustomOrder(strConnStr, "insertCustomOrder",catId,description,supplierId,Quantity,costPrice,totalPrice, mainOrderId, customerId);
+                DataSet dsUserLogin = OperationDAL.insertCustomOrder(strConnStr, "insertCustomOrder", catId, description, supplierId, Quantity, costPrice, totalPrice, mainOrderId, customerId);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -130,7 +126,7 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet getCartOrders(string strConnStr,int customerId)
+        public static DataSet getCartOrders(string strConnStr, int customerId)
         {
             try
             {
@@ -169,11 +165,11 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet loadBusinessCardPrice(string strConnStr, int spot ,int paperId)
+        public static DataSet loadBusinessCardPrice(string strConnStr, int spot, int paperId)
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.loadBusinessCardPrice(strConnStr, "loadBusinessCardPrice",spot,paperId);
+                DataSet dsUserLogin = OperationDAL.loadBusinessCardPrice(strConnStr, "loadBusinessCardPrice", spot, paperId);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -226,7 +222,7 @@ namespace sevenG_BL
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.updateOrderDesign(strConnStr, "updateOrderDesign" , mainOrderId);
+                DataSet dsUserLogin = OperationDAL.updateOrderDesign(strConnStr, "updateOrderDesign", mainOrderId);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -265,7 +261,7 @@ namespace sevenG_BL
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.updateQuotation(strConnStr, "updateQuotation", customerId,quotCode,rejReason,ApproveRejCh ,payMethod);
+                DataSet dsUserLogin = OperationDAL.updateQuotation(strConnStr, "updateQuotation", customerId, quotCode, rejReason, ApproveRejCh, payMethod);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -274,7 +270,7 @@ namespace sevenG_BL
             }
         }
 
-       
+
 
         public static DataSet loadCorners(string strConnStr)
         {
@@ -328,11 +324,11 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet editOrder(string strConnStr, int orderId, int addtional,string type)
+        public static DataSet editOrder(string strConnStr, int orderId, int addtional, string type)
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.editOrder(strConnStr, "editOrder", orderId, addtional , type);
+                DataSet dsUserLogin = OperationDAL.editOrder(strConnStr, "editOrder", orderId, addtional, type);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -345,7 +341,7 @@ namespace sevenG_BL
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.updateMainOrder(strConnStr, "updateMainOrder", mainOrder,  customerId,  quot_inv,  orderPrice,  tax,  orderAddtion,  orderDisc,  orderTotal);
+                DataSet dsUserLogin = OperationDAL.updateMainOrder(strConnStr, "updateMainOrder", mainOrder, customerId, quot_inv, orderPrice, tax, orderAddtion, orderDisc, orderTotal);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -394,7 +390,7 @@ namespace sevenG_BL
         }
 
 
-        public static DataSet loadFolderMaterial(string strConnStr,int prodId)
+        public static DataSet loadFolderMaterial(string strConnStr, int prodId)
         {
             try
             {
@@ -407,7 +403,7 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet loadProducts(string strConnStr,int categoryId)
+        public static DataSet loadProducts(string strConnStr, int categoryId)
         {
             try
             {
@@ -420,11 +416,11 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet insertCost(string strConnStr,int orderID, double printCost, double laminationCost, double spotCost, double spin, double cDCost, double pocketCost, double cornerCost, double FoldCost, double Cocost ,double cost)
+        public static DataSet insertCost(string strConnStr, int orderID, double printCost, double laminationCost, double spotCost, double spin, double cDCost, double pocketCost, double cornerCost, double FoldCost, double Cocost, double cost)
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.insertCost(strConnStr, "insertCost", orderID,  printCost,  laminationCost,  spotCost,  spin,  cDCost,  pocketCost,cornerCost,FoldCost, Cocost,  cost);
+                DataSet dsUserLogin = OperationDAL.insertCost(strConnStr, "insertCost", orderID, printCost, laminationCost, spotCost, spin, cDCost, pocketCost, cornerCost, FoldCost, Cocost, cost);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -446,11 +442,11 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet insertOperation(string strConnStr, int orderId, int draftSheets, int expectedSheets, int endCounter , int endCounter2, int endCounter3)
+        public static DataSet insertOperation(string strConnStr, int orderId, int draftSheets, int expectedSheets, int endCounter, int endCounter2, int endCounter3)
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.insertOperation(strConnStr, "insertOperation", orderId, draftSheets, expectedSheets, endCounter , endCounter2 , endCounter3);
+                DataSet dsUserLogin = OperationDAL.insertOperation(strConnStr, "insertOperation", orderId, draftSheets, expectedSheets, endCounter, endCounter2, endCounter3);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -498,7 +494,7 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet loadSize(string strConnStr,int prodId)
+        public static DataSet loadSize(string strConnStr, int prodId)
         {
             try
             {
@@ -525,12 +521,12 @@ namespace sevenG_BL
             }
         }
 
-      
-        public static DataSet insertOrder(string strConnStr, int podId, int paperId, int sizeId, int laminationId, string spot , int noSides, int printer, string cornORfinish ,int quantity,float cost,float total , int mainOrder, int customerID)
+
+        public static DataSet insertOrder(string strConnStr, int podId, int paperId, int sizeId, int laminationId, string spot, int noSides, int printer, string cornORfinish, int quantity, float cost, float total, int mainOrder, int customerID)
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.insertOrder(strConnStr, "insertOrder",  podId,  paperId,  sizeId,  laminationId,spot,  noSides, printer, cornORfinish, quantity, cost, total, mainOrder, customerID);
+                DataSet dsUserLogin = OperationDAL.insertOrder(strConnStr, "insertOrder", podId, paperId, sizeId, laminationId, spot, noSides, printer, cornORfinish, quantity, cost, total, mainOrder, customerID);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -565,7 +561,7 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet insertSubOrder(string strConnStr,int paperId, string bookType, int bookPages, int bookBinding, int coMatId, int coSizeId, int coLamaintionId, int coSides, int coPrinter, int coPages, float coverCost)
+        public static DataSet insertSubOrder(string strConnStr, int paperId, string bookType, int bookPages, int bookBinding, int coMatId, int coSizeId, int coLamaintionId, int coSides, int coPrinter, int coPages, float coverCost)
         {
             try
             {
@@ -578,11 +574,11 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet insertCoverOperation(string strConnStr, int orderId, int coDraftSheets, int coExpectedSheets, int coEndCounter , int coEndCounter2 , int coEndCounter3)
+        public static DataSet insertCoverOperation(string strConnStr, int orderId, int coDraftSheets, int coExpectedSheets, int coEndCounter, int coEndCounter2, int coEndCounter3)
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.insertCoverOperation(strConnStr, "insertCoverOperation", orderId, coDraftSheets, coExpectedSheets,  coEndCounter , coEndCounter2 , coEndCounter3);
+                DataSet dsUserLogin = OperationDAL.insertCoverOperation(strConnStr, "insertCoverOperation", orderId, coDraftSheets, coExpectedSheets, coEndCounter, coEndCounter2, coEndCounter3);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -591,11 +587,11 @@ namespace sevenG_BL
             }
         }
 
-        public static DataSet insertProcessOperation(string strConnStr, int orderId,int strPrint , int strPrint2 , int strPrint3)
+        public static DataSet insertProcessOperation(string strConnStr, int orderId, int strPrint, int strPrint2, int strPrint3)
         {
             try
             {
-                DataSet dsUserLogin = OperationDAL.insertProcessOperation(strConnStr, "insertProcessOperation", orderId, strPrint , strPrint2 ,strPrint3);
+                DataSet dsUserLogin = OperationDAL.insertProcessOperation(strConnStr, "insertProcessOperation", orderId, strPrint, strPrint2, strPrint3);
                 return dsUserLogin;
             }
             catch (Exception ex)
@@ -604,4 +600,4 @@ namespace sevenG_BL
             }
         }
     }
-    }
+}

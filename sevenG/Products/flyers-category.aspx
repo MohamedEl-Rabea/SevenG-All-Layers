@@ -12,6 +12,21 @@
                         <p class="card-category">Design Your Flyer</p>
                     </div>
                     <div class="card-body">
+                        <div class="row" runat="server" id="divErrMsg" visible="false">
+                            <div class="col-md-12">
+                                <div class="alert alert-danger text-center">
+                                    <span>
+                                        <b>Error - </b>
+                                        <asp:Label
+                                            ID="LBLError"
+                                            runat="server"
+                                            class="margin text-center"
+                                            Text="Here will be the error details">
+                                        </asp:Label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -68,7 +83,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="form-group" runat="server" id="divSpecial">
                                     <label class="bmd-label-floating">
                                         Special Effect
                                     </label>
@@ -88,7 +103,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="form-group" runat="server" id="divLamin" visible="false">
                                     <label class="bmd-label-floating">
                                         Lamination
                                     </label>
@@ -169,9 +184,18 @@ Product type - material type - selected size - special effect - lamination type 
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <asp:Button
+                                    ID="save"
+                                    class="btn btn-primary"
+                                    runat="server"
+                                    Text="Add to cart"
+                                    OnClick="save_Click" />
+                            </div>
+                        </div>
                     </div>
                     <div class="clearfix"></div>
-
                 </div>
             </div>
         </div>
@@ -185,69 +209,59 @@ Product type - material type - selected size - special effect - lamination type 
                         <p class="card-category">Choose your offer from list below</p>
                     </div>
                     <div class="card-body">
-                        <div class="table-responsive">
-                            <asp:GridView
-                                ID="GrdPrices"
-                                runat="server"
-                                DataKeyNames="ID"
-                                OnSelectedIndexChanged="GrdPrices_SelectedIndexChanged"
-                                OnRowDataBound="GrdPrices_RowDataBound"
-                                AutoGenerateColumns="False"
-                                GridLines="None"
-                                CssClass="table"
-                                ShowFooter="true">
-                                <Columns>
-                                    <asp:TemplateField HeaderText="Amount">
-                                        <ItemTemplate>
-                                            <asp:Label
-                                                ID="lblAmount"
-                                                runat="server"
-                                                Text='<%# Bind("QUANTITY") %>'>
-                                            </asp:Label>
-                                        </ItemTemplate>
-                                        <FooterTemplate>
-                                            <asp:TextBox
-                                                ID="txtCustomeAmount"
-                                                CssClass="form-control"
-                                                runat="server"
-                                                placeholder="Custom amount">
-                                            </asp:TextBox>
-                                        </FooterTemplate>
-                                        <FooterStyle Wrap="False" />
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="Price">
-                                        <ItemTemplate>
-                                            <asp:Label ID="lblPrice" runat="server" CssClass="text-primary" Text='<%# Bind("PRICE", "{0:c}") %>'></asp:Label>
-                                        </ItemTemplate>
-                                        <FooterTemplate>
-                                            <asp:TextBox
-                                                ID="txtCustomePrice"
-                                                CssClass="form-control"
-                                                runat="server"
-                                                placeholder="Custom price"></asp:TextBox>
-                                        </FooterTemplate>
-                                        <FooterStyle Wrap="False" />
-                                    </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="Price">
-                                        <ItemTemplate>
-                                            <asp:Button
-                                                ID="btnAddToCart"
-                                                runat="server"
-                                                CommandName="Select"
-                                                CssClass="btn btn-sm btn-success"
-                                                Text='Add to cart'></asp:Button>
-                                        </ItemTemplate>
-                                        <FooterTemplate>
-                                            <asp:Button
-                                                ID="btnAddToCartFooter"
-                                                runat="server"
-                                                CssClass="btn btn-sm btn-success"
-                                                CommandName="Select"
-                                                Text="Add to cart"></asp:Button>
-                                        </FooterTemplate>
-                                    </asp:TemplateField>
-                                </Columns>
-                            </asp:GridView>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <asp:GridView
+                                        ID="GrdPrices"
+                                        runat="server"
+                                        DataKeyNames="ID"
+                                        OnSelectedIndexChanged="GrdPrices_SelectedIndexChanged"
+                                        OnRowDataBound="GrdPrices_RowDataBound"
+                                        AutoGenerateColumns="False"
+                                        GridLines="None"
+                                        CssClass="table">
+                                        <Columns>
+                                            <asp:BoundField DataField="QUANTITY" HeaderText="Quantity" />
+                                            <asp:BoundField DataField="PRICE" HeaderText="Price" />
+                                            <asp:ButtonField Text="Select" ControlStyle-CssClass="btn btn-sm btn-success" CommandName="Select" ItemStyle-Width="30" />
+                                        </Columns>
+                                    </asp:GridView>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">
+                                        Amount
+                                    </label>
+                                    <asp:TextBox
+                                        ID="TXTQuantity"
+                                        runat="server"
+                                        CssClass="form-control"
+                                        AutoCompleteType="Disabled"
+                                        aria-describedby="Quantity">
+                                    </asp:TextBox>
+                                    <asp:CompareValidator runat="server" Operator="DataTypeCheck" Type="Integer" ForeColor="Red" SetFocusOnError="True"
+                                        ControlToValidate="TXTQuantity" ErrorMessage="Value must be a number" />
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">
+                                        Price
+                                    </label>
+                                    <asp:TextBox
+                                        ID="TxtPrice"
+                                        runat="server"
+                                        CssClass="form-control"
+                                        AutoCompleteType="Disabled"
+                                        aria-describedby="Price">
+                                    </asp:TextBox>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

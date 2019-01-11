@@ -13,6 +13,24 @@ namespace sevenG.Products {
     public partial class business_cards_category {
         
         /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// divErrMsg control.
         /// </summary>
         /// <remarks>
@@ -94,15 +112,6 @@ namespace sevenG.Products {
         protected global::System.Web.UI.WebControls.DropDownList DRLLamination;
         
         /// <summary>
-        /// checkRoundCorn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList checkRoundCorn;
-        
-        /// <summary>
         /// DRLSides control.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,15 @@ namespace sevenG.Products {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DrpPrint;
+        
+        /// <summary>
+        /// checkRoundCorn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList checkRoundCorn;
         
         /// <summary>
         /// txtAreaCardSummary control.

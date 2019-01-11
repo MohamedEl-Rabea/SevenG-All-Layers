@@ -18,6 +18,16 @@
 /**
     Custome styling
 */
+
+img[data-name] {
+    opacity: .7;
+}
+
+    img[data-name]:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
 .icon {
     background: url('your-image-url.jpg');
     height: 20px;

@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/SEVENG.Master" AutoEventWireup="true" CodeBehind="LoadAtt.aspx.cs" Inherits="sevenG.Design.LoadAtt" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
-      <form class="form-horizontal" runat="server">
         <asp:ScriptManager ID="script1" runat="server"></asp:ScriptManager>
         
       <div class="container-fluid">
@@ -62,6 +61,4 @@
            </div>
          
     </div>
-   
-   </form>
 </asp:Content>

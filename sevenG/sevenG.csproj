@@ -469,6 +469,7 @@
     <Content Include="forgot-password.html" />
     <Content Include="gulpfile.js" />
     <Content Include="7Gsetting\papers.aspx" />
+    <Content Include="test-partial-load.aspx" />
     <Content Include="views\HomePage.aspx" />
     <Content Include="views\MapFullAddress.aspx" />
     <Content Include="Web.config">
@@ -534,7 +535,6 @@
     </Compile>
     <Compile Include="Order\my-cart.aspx.cs">
       <DependentUpon>my-cart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Order\my-cart.aspx.designer.cs">
       <DependentUpon>my-cart.aspx</DependentUpon>
@@ -668,6 +668,13 @@
     <Compile Include="Services\NotificationService.asmx.cs">
       <DependentUpon>NotificationService.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="test-partial-load.aspx.cs">
+      <DependentUpon>test-partial-load.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test-partial-load.aspx.designer.cs">
+      <DependentUpon>test-partial-load.aspx</DependentUpon>
     </Compile>
     <Compile Include="views\MapFullAddress.aspx.cs">
       <DependentUpon>MapFullAddress.aspx</DependentUpon>
