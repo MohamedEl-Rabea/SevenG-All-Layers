@@ -1,33 +1,22 @@
 ﻿using sevenG_BL;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Web.UI.WebControls;
 
 namespace sevenG.Order
 {
-    class MyClass
-    {
-        public int ORDER_ID { get; set; }
-        public string PROD_NAME { get; set; }
-        public string PAPER_NAME { get; set; }
-        public string SIZE_NAME { get; set; }
-        public int QUANTITY { get; set; }
-        public int TOTAL_PRICE { get; set; }
-
-    }
     public partial class my_cart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<MyClass> testList = new List<MyClass>
+            if (!IsPostBack)
             {
-                new MyClass{ORDER_ID= 1, PAPER_NAME= "Test name", PROD_NAME = "Test product", SIZE_NAME = "Test size", QUANTITY=15, TOTAL_PRICE=30 },
-                new MyClass{ORDER_ID= 1, PAPER_NAME= "Test name", PROD_NAME = "Test product", SIZE_NAME = "Test size", QUANTITY=15, TOTAL_PRICE=30 },
-                new MyClass{ORDER_ID= 1, PAPER_NAME= "Test name", PROD_NAME = "Test product", SIZE_NAME = "Test size", QUANTITY=15, TOTAL_PRICE=30 }
-            };
-            GrdOrders.DataSource = testList;
-            GrdOrders.DataBind();
+                if (Session["CustomerID"] != null)
+                {
+                    getCartOrders();
+                }
+                txtAddtional_TextChanged(sender, e);
+            }
         }
 
         private void getCartOrders()
