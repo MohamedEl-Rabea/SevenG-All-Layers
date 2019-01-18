@@ -26,12 +26,28 @@
                     <div class="card-icon">
                         <i class="material-icons">book</i>
                     </div>
-                    <p class="card-category">Sales section #1</p>
+                    <p class="card-category">Sales section #2</p>
                     <h4 class="card-title"><strong>New quotation</strong></h4>
                 </div>
                 <div class="card-footer">
                     <div class="stats">
                         <a href="new-order.aspx" class="btn btn-success btn-sm">Enter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+                <div class="card-header card-header-info card-header-icon">
+                    <div class="card-icon">
+                        <i class="material-icons">sync</i>
+                    </div>
+                    <p class="card-category">Sales section #3</p>
+                    <h4 class="card-title"><strong>Manage Orders</strong></h4>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <a href="manage-order.aspx" class="btn btn-success btn-sm">Enter</a>
                     </div>
                 </div>
             </div>

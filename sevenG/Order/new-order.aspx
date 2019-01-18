@@ -37,15 +37,17 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label class="bmd-label-floating">
-                                    Divisions
+                                    Order Type
                                 </label>
                                 <asp:DropDownList
-                                    ID="DRLDivision"
+                                    ID="DRLOrderType"
                                     runat="server"
                                     CssClass="selectpicker"
-                                    DataTextField="DIVISION_NAME"
-                                    DataValueField="DIVISION_ID">
-                                    <asp:ListItem Value="0" Text="Select devision" />
+                                    AutoPostBack="True"
+                                    OnSelectedIndexChanged="DRLOrderType_SelectedIndexChanged">
+                                    <asp:ListItem Value="1">Normal Order</asp:ListItem>
+                                    <asp:ListItem Value="2">Custom Order</asp:ListItem>
+                                    <asp:ListItem Value="3">Wholesale Order</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
                         </div>

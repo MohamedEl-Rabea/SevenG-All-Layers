@@ -4,7 +4,7 @@ using System.Data;
 
 namespace sevenG.Order
 {
-    public partial class CustomOrder : System.Web.UI.Page
+    public partial class custom_order : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,7 +17,7 @@ namespace sevenG.Order
                 }
                 else
                 {
-                    Response.Redirect("../Order/Order.aspx");
+                    Response.Redirect("../Order/new-order.aspx");
                 }
             }
         }
@@ -66,6 +66,7 @@ namespace sevenG.Order
 
         protected void BtnSave_Click(object sender, EventArgs e)
         {
+            divErrMsg.Visible = false;
             float costPrice = float.Parse(TXTQuantity.Text.ToString()) * float.Parse(TXTCostPrice.Text.ToString());
             float totalPrice = float.Parse(TXTQuantity.Text.ToString()) * float.Parse(txtPrice.Text.ToString());
             DataSet ds = OperationBL.insertCustomOrder((Convert.ToString(Application["strDBConn"])), int.Parse(DRLCat.SelectedValue.ToString()),
@@ -75,21 +76,15 @@ namespace sevenG.Order
 
             if (ds.Tables[0].Rows[0]["ret"].ToString() == "-1")
             {
-                LBLError.Visible = true;
+                divErrMsg.Visible = true;
                 LBLError.Text = "This order is Added Before";
             }
             else
             {
-                LBLError.Visible = true;
-                LBLError.Text = "The order is added to cart...";
                 Session["attOrderId"] = ds.Tables[0].Rows[0]["ret"].ToString();
                 Session["MOrderID"] = Session["MainOrderID"].ToString();
                 Session["CustomerNo"] = Session["CustomerID"].ToString();
-                Response.Redirect("../Design/LoadAtt.aspx");
-
-
-
-
+                Response.Redirect("../Design/load-attachments.aspx");
             }
         }
     }

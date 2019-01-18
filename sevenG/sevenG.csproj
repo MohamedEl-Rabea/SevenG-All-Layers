@@ -229,8 +229,10 @@
     <Content Include="Dashboard\DshOrder.aspx" />
     <Content Include="Dashboard\DshQuotation.aspx" />
     <Content Include="Design\load-attachments.aspx" />
+    <Content Include="Order\custom-order.aspx" />
     <Content Include="Order\my-cart.aspx" />
     <Content Include="Order\new-order.aspx" />
+    <Content Include="Order\wholesale-order.aspx" />
     <Content Include="Products\books-booklets-category.aspx" />
     <Content Include="Products\business-cards-category.aspx" />
     <Content Include="Products\flyers-category.aspx" />
@@ -533,8 +535,16 @@
     <Compile Include="Design\load-attachments.aspx.designer.cs">
       <DependentUpon>load-attachments.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Order\custom-order.aspx.cs">
+      <DependentUpon>custom-order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\custom-order.aspx.designer.cs">
+      <DependentUpon>custom-order.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Order\my-cart.aspx.cs">
       <DependentUpon>my-cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Order\my-cart.aspx.designer.cs">
       <DependentUpon>my-cart.aspx</DependentUpon>
@@ -545,6 +555,13 @@
     </Compile>
     <Compile Include="Order\new-order.aspx.designer.cs">
       <DependentUpon>new-order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\wholesale-order.aspx.cs">
+      <DependentUpon>wholesale-order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\wholesale-order.aspx.designer.cs">
+      <DependentUpon>wholesale-order.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\books-booklets-category.aspx.cs">
       <DependentUpon>books-booklets-category.aspx</DependentUpon>

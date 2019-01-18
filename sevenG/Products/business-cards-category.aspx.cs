@@ -10,22 +10,22 @@ namespace sevenG.Products
         float count = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack)
-            //{
-            //    if (Session["MainOrderID"] != null)
-            //    {
-            //        loadProducts();
-            //        loadLaminations();
-            //        loadPrinters();
-            //        DRLProName_SelectedIndexChanged(sender, e);
-            //        DRLSize_SelectedIndexChanged(sender, e);
-            //        Session["roundPrice"] = count;
-            //    }
-            //    else
-            //    {
-            //        Response.Redirect("../Order/new-order.aspx");
-            //    }
-            //}
+            if (!IsPostBack)
+            {
+                if (Session["MainOrderID"] != null)
+                {
+                    loadProducts();
+                    loadLaminations();
+                    loadPrinters();
+                    DRLProName_SelectedIndexChanged(sender, e);
+                    DRLSize_SelectedIndexChanged(sender, e);
+                    Session["roundPrice"] = count;
+                }
+                else
+                {
+                    Response.Redirect("../Order/new-order.aspx");
+                }
+            }
         }
 
 
@@ -273,7 +273,7 @@ namespace sevenG.Products
                 Session["side"] = 0.0;
                 Session["sideCost"] = 0.5;
             }
-            DrpPrint_SelectedIndexChanged(sender, e);
+            //DrpPrint_SelectedIndexChanged(sender, e);
         }
 
         protected void DRLMaterials_SelectedIndexChanged(object sender, EventArgs e)

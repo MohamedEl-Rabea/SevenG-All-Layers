@@ -36,7 +36,8 @@ namespace sevenG.Services
             List<string> result = new List<string>();
             if (HttpContext.Current.Session["CustomerID"] != null)
             {
-                DataSet ds = OperationBL.getStockNotification((Convert.ToString(Application["strDBConn"])));
+                DataSet ds = OperationBL.getCartOrders((Convert.ToString(Application["strDBConn"])),
+                    Convert.ToInt32(HttpContext.Current.Session["CustomerID"]));
                 foreach (DataRow row in ds.Tables[0].Rows)
                 {
                     result.Add(row.ItemArray[0].ToString());

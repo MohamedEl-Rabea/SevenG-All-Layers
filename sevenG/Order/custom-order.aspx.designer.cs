@@ -10,25 +10,61 @@
 namespace sevenG.Order {
     
     
-    public partial class new_order {
+    public partial class custom_order {
         
         /// <summary>
-        /// DRLCustName control.
+        /// DRLCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DRLCustName;
+        protected global::System.Web.UI.WebControls.DropDownList DRLCat;
         
         /// <summary>
-        /// DRLOrderType control.
+        /// DRLSupplier control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DRLOrderType;
+        protected global::System.Web.UI.WebControls.DropDownList DRLSupplier;
+        
+        /// <summary>
+        /// TXTQuantity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXTQuantity;
+        
+        /// <summary>
+        /// txtPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
+        
+        /// <summary>
+        /// TXTCostPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXTCostPrice;
+        
+        /// <summary>
+        /// TXTDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXTDescription;
         
         /// <summary>
         /// divErrMsg control.

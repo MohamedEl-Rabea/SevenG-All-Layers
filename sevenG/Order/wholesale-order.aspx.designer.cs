@@ -7,19 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace sevenG.Products {
+namespace sevenG.Order {
     
     
-    public partial class Flyers {
+    public partial class wholesale_order {
         
         /// <summary>
-        /// DRLProName control.
+        /// DRLCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DRLProName;
+        protected global::System.Web.UI.WebControls.DropDownList DRLCat;
         
         /// <summary>
         /// DRLMaterials control.
@@ -40,42 +40,6 @@ namespace sevenG.Products {
         protected global::System.Web.UI.WebControls.DropDownList DRLSize;
         
         /// <summary>
-        /// divSpecial control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSpecial;
-        
-        /// <summary>
-        /// DrpSecialEffect control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DrpSecialEffect;
-        
-        /// <summary>
-        /// divLamin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divLamin;
-        
-        /// <summary>
-        /// DRLLamination control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DRLLamination;
-        
-        /// <summary>
         /// DRLSides control.
         /// </summary>
         /// <remarks>
@@ -92,24 +56,6 @@ namespace sevenG.Products {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DrpPrint;
-        
-        /// <summary>
-        /// DrpFinishing control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DrpFinishing;
-        
-        /// <summary>
-        /// divempty control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divempty;
         
         /// <summary>
         /// TXTQuantity control.
@@ -130,31 +76,13 @@ namespace sevenG.Products {
         protected global::System.Web.UI.WebControls.TextBox TxtPrice;
         
         /// <summary>
-        /// BtnQuantity control.
+        /// divErrMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton BtnQuantity;
-        
-        /// <summary>
-        /// GrdPrices control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GrdPrices;
-        
-        /// <summary>
-        /// save control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button save;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divErrMsg;
         
         /// <summary>
         /// LBLError control.
@@ -164,5 +92,14 @@ namespace sevenG.Products {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LBLError;
+        
+        /// <summary>
+        /// save control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button save;
     }
 }
