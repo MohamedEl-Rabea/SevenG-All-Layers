@@ -20,7 +20,7 @@
                                 <asp:DropDownList
                                     ID="DRLCustName"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     placeholder="اسم المنتج"
                                     DataTextField="CUSTOMER_NAME"
                                     DataValueField="CUSTOMER_ID">
@@ -42,7 +42,7 @@
                                 <asp:DropDownList
                                     ID="DRLOrderType"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     AutoPostBack="True"
                                     OnSelectedIndexChanged="DRLOrderType_SelectedIndexChanged">
                                     <asp:ListItem Value="1">Normal Order</asp:ListItem>

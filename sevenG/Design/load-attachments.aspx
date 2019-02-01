@@ -2,10 +2,8 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:ScriptManager runat="server"></asp:ScriptManager>
+    <asp:ScriptManager EnablePartialRendering="true" ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -16,18 +14,13 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="bmd-label-floating">
-                                    Attachments
-                                </label>
-                                <ajaxToolkit:AjaxFileUpload
-                                    ID="AttachmentFileUpload1"
-                                    align="center"
-                                    runat="server"
-                                    AllowedFileTypes="jpeg,jpg,zip,png,gif,pdf"
-                                    MaximumNumberOfFiles="5"
-                                    OnUploadComplete="AttachmentFileUpload1_UploadComplete" />
-                            </div>
+                            <ajaxToolkit:AjaxFileUpload
+                                ID="AttachmentFileUpload1"
+                                align="center"
+                                runat="server"
+                                AllowedFileTypes="jpeg,jpg,zip,png,gif,pdf"
+                                MaximumNumberOfFiles="5"
+                                OnUploadComplete="AttachmentFileUpload1_UploadComplete" />
                         </div>
                     </div>
                     <div class="row" runat="server" id="divErrMsg" visible="false">

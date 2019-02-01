@@ -189,6 +189,7 @@
     <Content Include="assets\img\mask.png" />
     <Content Include="assets\img\Metallic-Business-card.png" />
     <Content Include="assets\img\new_logo.png" />
+    <Content Include="assets\img\Nggfj.png" />
     <Content Include="assets\img\rounded_corners.png" />
     <Content Include="assets\img\sidebar-1.jpg" />
     <Content Include="assets\img\sidebar-2.jpg" />
@@ -240,7 +241,6 @@
     <Content Include="Setting\customer-defnition.aspx" />
     <Content Include="Setting\Definitions-navigation-panel.aspx" />
     <Content Include="Design\Design-navigation-panel.aspx" />
-    <Content Include="Design\LoadAtt.aspx" />
     <Content Include="Design\ProcessDesign.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Index.aspx" />
@@ -272,8 +272,6 @@
     <Content Include=".gitignore" />
     <Content Include=".jsbeautifyrc" />
     <Content Include=".travis.yml" />
-    <Content Include="package-lock.json" />
-    <Content Include="package.json" />
     <Content Include="MasterPages\SEVENG.Master" />
     <Content Include="Services\NotificationService.asmx" />
     <Content Include="App_Code\SevenG.xsc">
@@ -459,6 +457,7 @@
     <Content Include="assets\scss\material-dashboard\_tooltip.scss" />
     <Content Include="assets\scss\material-dashboard\_type.scss" />
     <Content Include="assets\scss\material-dashboard\_variables.scss" />
+    <None Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\7GSystem.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -469,7 +468,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="forgot-password.html" />
-    <Content Include="gulpfile.js" />
     <Content Include="7Gsetting\papers.aspx" />
     <Content Include="test-partial-load.aspx" />
     <Content Include="views\HomePage.aspx" />
@@ -611,13 +609,6 @@
     </Compile>
     <Compile Include="Design\Design-navigation-panel.aspx.designer.cs">
       <DependentUpon>Design-navigation-panel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Design\LoadAtt.aspx.cs">
-      <DependentUpon>LoadAtt.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Design\LoadAtt.aspx.designer.cs">
-      <DependentUpon>LoadAtt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Design\ProcessDesign.aspx.cs">
       <DependentUpon>ProcessDesign.aspx</DependentUpon>

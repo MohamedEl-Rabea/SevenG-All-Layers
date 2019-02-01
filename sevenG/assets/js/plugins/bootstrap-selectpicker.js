@@ -432,7 +432,7 @@
     var REGEXP_TAB_OR_ESCAPE = new RegExp('^' + keyCodes.TAB + '$|' + keyCodes.ESCAPE);
     var REGEXP_ENTER_OR_SPACE = new RegExp(keyCodes.ENTER + '|' + keyCodes.SPACE);
 
-    var Selectpicker = function(element, options) {
+    var selectpicker = function(element, options) {
       var that = this;
 
       // bootstrap-select has been initialized - revert valHooks.select.set back to its original function
@@ -486,24 +486,24 @@
       }
 
       //Expose public methods
-      this.val = Selectpicker.prototype.val;
-      this.render = Selectpicker.prototype.render;
-      this.refresh = Selectpicker.prototype.refresh;
-      this.setStyle = Selectpicker.prototype.setStyle;
-      this.selectAll = Selectpicker.prototype.selectAll;
-      this.deselectAll = Selectpicker.prototype.deselectAll;
-      this.destroy = Selectpicker.prototype.destroy;
-      this.remove = Selectpicker.prototype.remove;
-      this.show = Selectpicker.prototype.show;
-      this.hide = Selectpicker.prototype.hide;
+      this.val = selectpicker.prototype.val;
+      this.render = selectpicker.prototype.render;
+      this.refresh = selectpicker.prototype.refresh;
+      this.setStyle = selectpicker.prototype.setStyle;
+      this.selectAll = selectpicker.prototype.selectAll;
+      this.deselectAll = selectpicker.prototype.deselectAll;
+      this.destroy = selectpicker.prototype.destroy;
+      this.remove = selectpicker.prototype.remove;
+      this.show = selectpicker.prototype.show;
+      this.hide = selectpicker.prototype.hide;
 
       this.init();
     };
 
-    Selectpicker.VERSION = '1.13.1';
+    selectpicker.VERSION = '1.13.1';
 
     // part of this is duplicated in i18n/defaults-en_US.js. Make sure to update both.
-    Selectpicker.DEFAULTS = {
+    selectpicker.DEFAULTS = {
       noneSelectedText: 'Nothing selected',
       noneResultsText: 'No results matched {0}',
       countSelectedText: function(numSelected, numTotal) {
@@ -553,14 +553,14 @@
     };
 
     if (version.major === '4') {
-      Selectpicker.DEFAULTS.style = 'btn-light';
-      Selectpicker.DEFAULTS.iconBase = '';
-      Selectpicker.DEFAULTS.tickIcon = 'bs-ok-default';
+      selectpicker.DEFAULTS.style = 'btn-light';
+      selectpicker.DEFAULTS.iconBase = '';
+      selectpicker.DEFAULTS.tickIcon = 'bs-ok-default';
     }
 
-    Selectpicker.prototype = {
+    selectpicker.prototype = {
 
-      constructor: Selectpicker,
+      constructor: selectpicker,
 
       init: function() {
         var that = this,
@@ -2617,7 +2617,7 @@
       }
     };
 
-    // SELECTPICKER PLUGIN DEFINITION
+    // selectpicker PLUGIN DEFINITION
     // ==============================
     function Plugin(option) {
       // get the args of the outer function..
@@ -2636,9 +2636,9 @@
             options = typeof _option == 'object' && _option;
 
           if (!data) {
-            var config = $.extend({}, Selectpicker.DEFAULTS, $.fn.selectpicker.defaults || {}, $this.data(), options);
-            config.template = $.extend({}, Selectpicker.DEFAULTS.template, ($.fn.selectpicker.defaults ? $.fn.selectpicker.defaults.template : {}), $this.data().template, options.template);
-            $this.data('selectpicker', (data = new Selectpicker(this, config)));
+            var config = $.extend({}, selectpicker.DEFAULTS, $.fn.selectpicker.defaults || {}, $this.data(), options);
+            config.template = $.extend({}, selectpicker.DEFAULTS.template, ($.fn.selectpicker.defaults ? $.fn.selectpicker.defaults.template : {}), $this.data().template, options.template);
+            $this.data('selectpicker', (data = new selectpicker(this, config)));
           } else if (options) {
             for (var i in options) {
               if (options.hasOwnProperty(i)) {
@@ -2667,9 +2667,9 @@
 
     var old = $.fn.selectpicker;
     $.fn.selectpicker = Plugin;
-    $.fn.selectpicker.Constructor = Selectpicker;
+    $.fn.selectpicker.Constructor = selectpicker;
 
-    // SELECTPICKER NO CONFLICT
+    // selectpicker NO CONFLICT
     // ========================
     $.fn.selectpicker.noConflict = function() {
       $.fn.selectpicker = old;
@@ -2678,12 +2678,12 @@
 
     $(document)
       .off('keydown.bs.dropdown.data-api')
-      .on('keydown.bs.select', '.bootstrap-select [data-toggle="dropdown"], .bootstrap-select [role="listbox"], .bs-searchbox input', Selectpicker.prototype.keydown)
+      .on('keydown.bs.select', '.bootstrap-select [data-toggle="dropdown"], .bootstrap-select [role="listbox"], .bs-searchbox input', selectpicker.prototype.keydown)
       .on('focusin.modal', '.bootstrap-select [data-toggle="dropdown"], .bootstrap-select [role="listbox"], .bs-searchbox input', function(e) {
         e.stopPropagation();
       });
 
-    // SELECTPICKER DATA-API
+    // selectpicker DATA-API
     // =====================
     $(window).on('load.bs.select.data-api', function() {
       $('.selectpicker').each(function() {

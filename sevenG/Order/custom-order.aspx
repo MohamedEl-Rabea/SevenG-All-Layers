@@ -20,7 +20,7 @@
                                 <asp:DropDownList
                                     ID="DRLCat"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     placeholder="اسم المنتج"
                                     DataTextField="CATEGORY_NAME"
                                     DataValueField="CATEGORY_ID"
@@ -43,7 +43,7 @@
                                 <asp:DropDownList
                                     ID="DRLSupplier"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     DataTextField="SUPPLIER_NAME"
                                     DataValueField="SUPPLIER_ID"
                                     AutoPostBack="True"

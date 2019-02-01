@@ -20,7 +20,7 @@
                                 <asp:DropDownList
                                     ID="DRLCat"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     DataTextField="CAT_NAME_E"
                                     DataValueField="CAT_ID"
                                     AutoPostBack="True"
@@ -36,7 +36,7 @@
                                 <asp:DropDownList
                                     ID="DRLMaterials"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     DataTextField="PAPER_NAME"
                                     DataValueField="PAPER_ID"
                                     AutoPostBack="True"
@@ -54,7 +54,7 @@
                                 <asp:DropDownList
                                     ID="DRLSize"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     AutoPostBack="True"
                                     OnSelectedIndexChanged="DRLSize_SelectedIndexChanged">
                                     <asp:ListItem Value="101">A3(33*48)</asp:ListItem>
@@ -70,7 +70,7 @@
                                 <asp:DropDownList
                                     ID="DRLSides"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     AutoPostBack="True"
                                     OnSelectedIndexChanged="DRLSides_SelectedIndexChanged">
                                     <asp:ListItem Value="2">2 Sides</asp:ListItem>
@@ -88,7 +88,7 @@
                                 <asp:DropDownList
                                     ID="DrpPrint"
                                     runat="server"
-                                    CssClass="selectpicker"
+                                    CssClass="dropDownStyle"
                                     DataTextField="PRINTER_TYPE"
                                     DataValueField="PRINTER_ID"
                                     AutoPostBack="True"

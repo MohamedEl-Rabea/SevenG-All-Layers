@@ -18,6 +18,40 @@
 /**
     Custome styling
 */
+.dropDownStyle {
+    border-color: #d2d2d2;
+    border-radius: 5px;
+    padding: 5px;
+    -webkit-appearance: none;
+    background-image: url('../img/Nggfj.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    text-indent: 0.01px; /*In Firefox*/
+    text-overflow: ''; /*In Firefox*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+    color: #6c757d
+}
+
+    .dropDownStyle:hover {
+        cursor: pointer;
+    }
+
+select > option {
+    display: block;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.table {
+    overflow: scroll;
+}
+
+.no-display {
+    display: none;
+}
 
 img[data-name] {
     opacity: .7;
